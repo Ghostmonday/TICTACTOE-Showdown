@@ -8,3 +8,12 @@ current_player = 'X'
 
 # Tracks the state of the game ('ongoing', 'draw', 'win')
 game_state = 'ongoing'
+
+
+def render_board():
+    """Displays the current Tic-Tac-Toe board in a 3x3 grid format."""
+    for i, row in enumerate(board):
+        row_display = ' | '.join(cell if cell is not None else ' ' for cell in row)
+        print(f' {row_display} ')
+        if i < 2:
+            print('---+---+---')

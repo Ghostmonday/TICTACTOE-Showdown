@@ -2,6 +2,7 @@
 
 #include <array>
 #include <string>
+#include <iostream>
 
 // Enum to represent the cell state
 enum class CellState {
@@ -28,4 +29,7 @@ public:
     
     // Reset the board to its initial state
     void reset();
+    
+    // Display the current board state to the console
+    void display() const;
 };
